@@ -10,3 +10,32 @@ body {
 
 /* -------------------------------------------- */
 
+label {
+  display: block;
+  color: blue;
+}
+
+[type="text"] {
+  background-color: blueviolet;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+[type="submit"] {
+  padding: 15px;
+  background-color: brown;
+  color: white;
+  border: 2px dashed black;
+  border-radius: 10px;
+}
+
+[type="submit"]:hover {
+  background-color: white;
+  color: red;
+}
+
+[type="radio"] {
+ width: 20px;
+ height: 20px;
+}

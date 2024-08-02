@@ -16,7 +16,63 @@
 		http://formular.itgirls.cz/
 	-->
 
+  <form method="post" action="http://formular.itgirls.cz/">
+    <input type="text" name="Datum" id="datum" value="01.01.2023" maxlength="10" placeholder="dd/mm/yyyy" autofocus required> <!--readonly disable-->
+  </form>
 
+  <form method="get" action="http://formular.itgirls.cz/">
+		<label for="adresa">Jmeno:</label><input type="text" name="Adresa" id="adresa" value="Opletalova 333, 000 00 brno" placeholder="+420 xxx xxx xxx" >
+
+    <label for="vek">Vek:</label><input type="number" name="vek" id="vek" value="300" min="100" max="1000" step="100" required>
+
+    <label for="email">Email:</label><input type="email" name="Email" id email>
+
+    <label for="tel">Telefon:</label><input type="tel" id="tel" name="mobil">
+
+    <label for="url">Url:</label><input type="url" id="url" name="url">
+
+    <label for="datum">Datum:</label><input type="date" id="datum" name="datum">
+
+    <label for="heslo">Heslo:</label><input type="password" name="heslo">
+
+    <input type="hidden" name="ID" value="xyz">
+
+    <textarea cols="10" rows="10">Text</textarea>
+
+    <label for="souhlas">Souhlas:</label> <input type="checkbox" value="souhlas" id="souhlas" name="souhlas se zpracovanim"> Souhlas se zpracovanim
+
+    <br>
+    <br>
+
+            <br>
+        <br>
+        <fieldset>
+            <legend>Dalsi informace</legend>
+            <textarea rows="10" cols="10"></textarea>
+            <br>
+            <br>
+            <input type="checkbox" value="souhlas" name="Souhlas se zpracovanim"> Souhlasim se zpracovanim...
+            <br>
+            <br>
+            <input type="radio" name="volba" id="volba1" value="1"> Volba 1
+            <input type="radio" name="volba" id="volba2" value="2"> Volba 2
+            <input type="radio" name="volba" id="volba3" value="3"> Volba 3
+            <input type="radio" name="yz"> XYZ
+            <br>
+            <br>
+            <select>
+                <option></option>
+                <option value="praha">Praha</option>
+                <option value="brno">Brno</option>
+                <option value="ostrava" selected>Ostrava</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+
+    <input type="submit" value="odeslat formular">
+
+	</form>
 
 </body>
 </html>
